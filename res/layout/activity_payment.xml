@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/intro_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:textSize="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Fill these details:" />
+
+    <EditText
+        android:id="@+id/address_text"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:ems="10"
+       android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:text="Address:"
+        android:layout_below="@+id/intro_payment"
+        android:layout_marginTop="20dp"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:text="Full Name:"
+        android:layout_below="@+id/address_text"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:id="@+id/contact_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:text="Contact Number:"
+        android:layout_below="@+id/name_text"
+        android:layout_marginTop="20dp"
+        android:inputType="phone" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_view"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:text="Credit" />
+
+
+    <TextView
+        android:id="@+id/payment_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/contact_text"
+        android:layout_marginLeft="20dp"
+        android:text="Select payment Options :" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:text="COD" />
+
+    <Button
+        android:id="@+id/final_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="600dp"
+
+        android:text="Confirm" />
+</RelativeLayout>

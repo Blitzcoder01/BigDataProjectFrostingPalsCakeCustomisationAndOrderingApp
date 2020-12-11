@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserGalleryPickUp">
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="283dp"
+        android:layout_height="242dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FDB8D0" />
+
+    <EditText
+        android:id="@+id/title_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/cakename_user"
+        android:layout_centerHorizontal="true"
+        android:hint="Flavour:"
+        />
+    <EditText
+        android:id="@+id/weight_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/title_user"
+        android:layout_centerHorizontal="true"
+        android:hint="Weight:"
+
+        />
+    <EditText
+        android:id="@+id/type_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/weight_user"
+        android:layout_centerHorizontal="true"
+        android:hint="Egg: yes/no"
+
+        />
+    <EditText
+        android:id="@+id/message_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/type_user"
+        android:hint="message on cake:"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/aladin"
+        android:onClick="pick"
+        android:text="select picture" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+
+        android:fontFamily="@font/aladin"
+        android:text="upload" />
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/detail_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/message_user"
+        android:hint="Detail in short:"
+        android:layout_centerHorizontal="true"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/cakename_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/baloo"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@+id/iv_user"
+        android:hint="Name Of Cake:" />
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/address_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/detail_user"
+        android:hint="Home Address:"
+        android:layout_centerHorizontal="true"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        />
+    <EditText
+        android:ems="10"
+        android:id="@+id/name_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/address_user"
+        android:hint="Customer Name:"
+        android:layout_centerHorizontal="true"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        />
+
+    <EditText
+        android:id="@+id/phone_user"
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Contact Number:"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name_user"
+        android:inputType="phone" />
+
+</RelativeLayout>
